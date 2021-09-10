@@ -3,7 +3,7 @@
 1. Изучить теорию
 2. Какой или какие из вариантов не верны:
 */
-/*
+
 //Вариант №1
 if (1 === "1") {
 	console.log('Истина!');
@@ -16,6 +16,7 @@ if (5 == "5") {
 } else {
 	console.log('Ложь!');
 }
+
 //Вариант №3
 let message = (92 > '11' && 58 < 100) ? 'Истина!' : 'Ложь!';
 console.log(message);
@@ -26,7 +27,7 @@ if (0) {
 } else if (" ") {
 	console.log('Истина!');
 }
-*/
+
 //========================================================================================================================================================
 //========================================================================================================================================================
 /*
@@ -87,6 +88,9 @@ if (number > 10) {
 }*/
 
 /*
+let message = "Hi, i'm a freelancer";
+let number = 5;
+
 if (number > 50) {
 	console.log('5 больше 50');
 } else if (number > 30) {
@@ -99,6 +103,7 @@ if (number > 50) {
 	console.log('Условие не выполнено :(');
 }
 */
+
 /*
 //Условный оператор "?"
 
@@ -111,12 +116,42 @@ if (5 > 1) {
 	messageEnd = ", Оля!";
 }
 
+message += messageEnd;
+console.log(message);
+//
 let messageEnd = 5 > 10 ? ", Вася!" : ", Оля!";
 
 message += messageEnd;
 console.log(message);
 
-let message = 5 > 10 ? "Привет, Вася!" : "Привет, Оля!";
+*/
+/*
+let message = "hi";
+
+let meassegeEnd = 5 > 10 ? "Hi, Vasya" : "Hi, Olya";
+console.log(message);
+*/
+
+/*
+let message = "Привет";
+let messageEnd;
+
+if (5 > 50) {
+	messageEnd = ", Vasia";
+} else if (5 > 30) {
+	messageEnd = ", Olya";
+} else if (5 > 1) {
+	messageEnd = ", Misha";
+} else {
+	messageEnd = ", Innokentiy";
+}
+
+messageEnd = 5 > 10 ? ", Vasia" : 
+    5 > 30 ? ", Olya" : 
+	  5 > 10 ? ", Misha" : 
+	    5 > 1 ? ", Andrey" : ", Innokentiy"
+
+message += messageEnd;
 console.log(message);
 */
 
