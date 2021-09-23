@@ -115,11 +115,14 @@ function getSumm() {
 getNumOne();
 getSumm();
 */
+
+/* -- Twitter example --
 function oneHundredDaysOfCode() {
 	twitter.log('Today i learn functions')
 }
 
 oneHundredDaysOfCode();
+*/
 //-----
 /*
 // Вложенность и видимость функций
@@ -210,6 +213,27 @@ console.log(globalVar);
 
 getSumm();
 */
+let globalVar = "I ma a Global variable";
+
+function getSumm() {
+	let numOne, numTwo;
+
+	function getNumOne() {
+		numOne = 1;
+		console.log(globalVar);
+	}
+	function getNumTwo() {
+		numTwo = 2;
+	}
+	getNumOne();
+	getNumTwo();
+
+	let numSum = numOne + numTwo;
+	console.log(globalVar);
+}
+console.log(globalVar);
+
+getSumm();
 
 //===========================================================
 /*
