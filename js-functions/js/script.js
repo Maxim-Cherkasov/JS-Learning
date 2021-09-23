@@ -115,6 +115,11 @@ function getSumm() {
 getNumOne();
 getSumm();
 */
+function oneHundredDaysOfCode() {
+	twitter.log('Today i learn functions')
+}
+
+oneHundredDaysOfCode();
 //-----
 /*
 // Вложенность и видимость функций
