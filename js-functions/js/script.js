@@ -213,27 +213,6 @@ console.log(globalVar);
 
 getSumm();
 */
-let globalVar = "I ma a Global variable";
-
-function getSumm() {
-	let numOne, numTwo;
-
-	function getNumOne() {
-		numOne = 1;
-		console.log(globalVar);
-	}
-	function getNumTwo() {
-		numTwo = 2;
-	}
-	getNumOne();
-	getNumTwo();
-
-	let numSum = numOne + numTwo;
-	console.log(globalVar);
-}
-console.log(globalVar);
-
-getSumm();
 
 //===========================================================
 /*
@@ -249,8 +228,6 @@ function calcSumm(numOne = 1, numTwo = 2) {
 
 calcSumm(5, 5);
 */
-
-
 
 //------
 /*
@@ -296,7 +273,15 @@ let funcRezult = calcSumm(1, 2);
 
 console.log(`Сумма: ${funcRezult}`);
 */
+function calcSumm(numOne, numTwo) {
+	let numSumm = numOne + numTwo;
 
+	return numSumm;
+}
+
+let funcResult = calcSumm(1, 2);
+
+console.log(`Summ: ${funcResult}`);
 //------
 /*
 function calcSumm(numOne, numTwo) {
