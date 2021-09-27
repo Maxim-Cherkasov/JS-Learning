@@ -273,15 +273,7 @@ let funcRezult = calcSumm(1, 2);
 
 console.log(`Сумма: ${funcRezult}`);
 */
-function calcSumm(numOne, numTwo) {
-	let numSumm = numOne + numTwo;
 
-	return numSumm;
-}
-
-let funcResult = calcSumm(1, 2);
-
-console.log(`Summ: ${funcResult}`);
 //------
 /*
 function calcSumm(numOne, numTwo) {
@@ -332,6 +324,7 @@ function calcSumm(numOne, numTwo) {
 }
 calcSumm(5, 5)
 */
+
 //===========================================================
 // Рекурсия
 /*
