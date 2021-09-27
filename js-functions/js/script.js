@@ -341,7 +341,7 @@ getSumm(5, 5);
 */
 
 //------
-/*
+
 function calcSumm(numOne, numTwo) {
 	let result = 1;
 	// умножаем result на numOne numTwo раз в цикле
@@ -351,7 +351,6 @@ function calcSumm(numOne, numTwo) {
 	return result;
 }
 console.log(calcSumm(2, 3));
-*/
 
 //------
 /*
