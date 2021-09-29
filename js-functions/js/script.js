@@ -342,16 +342,6 @@ getSumm(5, 5);
 
 //------
 
-function calcSumm(numOne, numTwo) {
-	let result = 1;
-	// умножаем result на numOne numTwo раз в цикле
-	for (let i = 0; i < numTwo; i++) {
-		result *= numOne;
-	}
-	return result;
-}
-console.log(calcSumm(2, 3));
-
 //------
 /*
 function calcSumm(numOne, numTwo) {
@@ -372,6 +362,7 @@ let showMessage = function () {
 
 showMessage();
 */
+
 //-----
 /*
 function getSumm() {
@@ -385,6 +376,7 @@ someVar();
 getSumm();
 
 */
+
 //-----
 /*
 //Объявление функции (Function Declaration)
@@ -423,6 +415,15 @@ if (2 > 1) {
 }
 getSumm();
 */
+let getSumm;
+
+if (2 > 1) {
+	getSumm = function () {
+		let summ = 1 + 2;
+		console.log(summ);
+	};
+}
+getSumm();
 //===========================================================
 //Функции стрелки(arrow functions)
 /*
