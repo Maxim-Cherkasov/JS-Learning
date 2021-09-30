@@ -415,15 +415,7 @@ if (2 > 1) {
 }
 getSumm();
 */
-let getSumm;
 
-if (2 > 1) {
-	getSumm = function () {
-		let summ = 1 + 2;
-		console.log(summ);
-	};
-}
-getSumm();
 //===========================================================
 //Функции стрелки(arrow functions)
 /*
@@ -450,6 +442,7 @@ let getMessage = (text, name) => {
 };
 console.log(getMessage('Привет', 'Вася'));
 */
+
 //===========================================================
 // Планирование setTimeout и setInterval
 /*
@@ -471,6 +464,7 @@ function showMessage(text, name) {
 //setInterval(showMessage, 500, 'Привет', 'Вася');
 setTimeout(showMessage, 500, 'Привет', 'Вася');
 */
+
 //---
 /*
 let result = 0;
@@ -483,6 +477,15 @@ function showNumber(num) {
 }
 let timeId = setInterval(showNumber, 1000, 1);
 */
+let result = 0;
+function showNumber(num) {
+	result += num;
+	console.log(result);
+	if (result === 5) {
+		clearInterval(timeId);
+	}
+}
+let timeId = setInterval(showNumber, 1000, 1);
 //---
 /*
 setTimeout(function () {
