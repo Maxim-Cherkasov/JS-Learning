@@ -459,10 +459,10 @@ setInterval(функция или код, задержка, параметр, ..
 /*
 function showMessage(text, name) {
 	console.log(`${text}, ${name}!`);
-	setTimeout(showMessage, 500, text, name);
+	setTimeout(showMessage, 1000, text, name);
 }
 //setInterval(showMessage, 500, 'Привет', 'Вася');
-setTimeout(showMessage, 500, 'Привет', 'Вася');
+setTimeout(showMessage, 1000, 'Привет', 'Вася');
 */
 
 //---
@@ -477,15 +477,25 @@ function showNumber(num) {
 }
 let timeId = setInterval(showNumber, 1000, 1);
 */
-let result = 0;
 function showNumber(num) {
-	result += num;
-	console.log(result);
-	if (result === 5) {
-		clearInterval(timeId);
+	console.log(num);
+	let timeId = setTimeout(showNumber, 1000, ++num);
+	if (num === 6) {
+		clearTimeout(timeId);
 	}
 }
-let timeId = setInterval(showNumber, 1000, 1);
+
+setTimeout(showNumber, 1000, 1);
+/*
+function showNumber(num) {
+	console.log(num);
+	if (num < 15) {
+	setTimeout(showNumber, 1000, ++num);
+	}
+}
+
+setTimeout(showNumber, 1000, 1);
+*/
 //---
 /*
 setTimeout(function () {
