@@ -477,15 +477,7 @@ function showNumber(num) {
 }
 let timeId = setInterval(showNumber, 1000, 1);
 */
-function showNumber(num) {
-	console.log(num);
-	let timeId = setTimeout(showNumber, 1000, ++num);
-	if (num === 6) {
-		clearTimeout(timeId);
-	}
-}
 
-setTimeout(showNumber, 1000, 1);
 /*
 function showNumber(num) {
 	console.log(num);
