@@ -1,9 +1,5 @@
 //ДОМАШКА
-function showName() {
-	console.log('Vasia!');
-}
-setTimeout(showName, 0);
-console.log('Kolia');
+
 /*
 1. Изучить теорию
 2. Решить задачи:
@@ -541,3 +537,76 @@ initMessage('Привет', 'Фрилансер');
 
 //========================================================================================================================================================
 //========================================================================================================================================================
+
+// js.info
+/*
+let userName = 'John';
+
+function showMessage() {
+	let userName = "Bob";
+
+	let message = 'Hello, ' + userName;
+	alert(message);
+}
+
+showMessage();
+
+alert(userName);
+*/
+/*
+function showMessage(from, text) { // parameters: from, text
+	alert(from + ': ' + text);
+ }
+ 
+ showMessage('Ann', 'Hello!'); // Ann: Hello! (*)
+ showMessage('Ann', "What's up?");
+ showMessage('Penn', "hello");
+ */
+/*
+ function showMessage(from, text) {
+	 from = '*' + from + '*';
+
+	 alert(from + ', ' + text);
+ }
+
+ let from = "Ann";
+
+ showMessage(from, "Hello");
+ */
+/*
+ function showMessage(text) {
+	 if (text === undefined) {
+		 text = 'empty message';
+	 }
+
+	 alert(text);
+ }
+
+ showMessage("errre");
+ */
+/*
+function showCount(count) {
+	alert(count ?? "unknown");
+}
+
+showCount(0);
+showCount(null);
+showCount();
+*/
+/*
+function checkAge(age) {
+	if (age >= 18) {
+		return true;
+	} else {
+		return confirm('Do you have permission?');
+	}
+}
+
+let age = prompt('How old are you?', 18);
+
+if (checkAge(age)) {
+	alert('Access granted');
+} else {
+	alert('Access denied');
+}
+*/
