@@ -610,3 +610,46 @@ if (checkAge(age)) {
 	alert('Access denied');
 }
 */
+/*
+function checkAge(age) {
+	if (age > 18) {
+		return true;
+	} else {
+		return confirm('А родители разрешили?');
+	}
+}
+
+let age = prompt('Сколько вам лет?', 18);
+
+if (checkAge(age)) {
+	alert('Доступ получен');
+} else {
+	alert('Доступ закрыт');
+}
+*/
+/*
+function showMovie(age) {
+	if ( !checkAge(age) ) {
+	  return;
+	}
+ 
+	alert( "Вам показывается кино" ); // (*)
+	// ...
+ }
+ */
+/*
+function showMovie(age) {
+	if (!checkAge(age)) {
+		return;
+	}
+
+	alert("Вам показывается кино");
+}
+*/
+function showMovie(age) {
+	if (!checkAge(age)) {
+		return;
+	}
+
+	alert("Вам показывается кино");
+}
