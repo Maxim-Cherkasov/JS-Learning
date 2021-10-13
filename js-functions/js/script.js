@@ -255,7 +255,23 @@ function showLessMessage() {
 }
 calcSumm(1, 1, showMoreMessage, showLessMessage);
 */
+function calcSumm(numOne, numTwo, more, less) {
+	let numSumm = numOne + numTwo;
 
+	if (numSumm > 3) {
+		more();
+	} else {
+		less();
+	}
+}
+
+function showMoreMessage() {
+	console.log('More than 3');
+}
+function showLessMessage() {
+	console.log('Less than 3');
+}
+calcSumm(1, 1, showMoreMessage, showLessMessage);
 //===========================================================
 
 /*
