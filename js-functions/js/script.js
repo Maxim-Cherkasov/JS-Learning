@@ -340,7 +340,16 @@ function calcSumm(numOne, numTwo) {
 }
 getSumm(5, 5);
 */
+function getSumm(numOne, numTwo) {
+	let numSumm = calcSumm(numOne, numTwo);
 
+	console.log(numSumm);
+}
+function calcSumm(numOne, numTwo) {
+	return numOne + numTwo;
+
+}
+getSumm(5, 5);
 //------
 
 //------
@@ -354,16 +363,7 @@ function calcSumm(numOne, numTwo) {
 }
 console.log(calcSumm(2, 3));
 */
-function calcSumm(numOne, numTwo) {
-	let result = 1
-	// умножаем result на numOne numTwo раз
-	for(let i = 0; i < numTwo; i++) {
-	
-	result *= numOne;
-	}
-	return result;
-}
-console.log(calcSumm(2, 3));
+
 
 //========================================================================================================================================================
 /*
