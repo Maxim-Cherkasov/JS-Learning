@@ -340,16 +340,7 @@ function calcSumm(numOne, numTwo) {
 }
 getSumm(5, 5);
 */
-function getSumm(numOne, numTwo) {
-	let numSumm = calcSumm(numOne, numTwo);
 
-	console.log(numSumm);
-}
-function calcSumm(numOne, numTwo) {
-	return numOne + numTwo;
-
-}
-getSumm(5, 5);
 //------
 
 //------
@@ -375,18 +366,6 @@ showMessage();
 */
 
 //-----
-/*
-function getSumm() {
-	let summ = 1 + 2;
-	console.log(summ);
-};
-
-let someVar = getSumm;
-
-someVar();
-getSumm();
-
-*/
 
 //-----
 /*
@@ -396,7 +375,19 @@ function getSumm() {
 	console.log(summ);
 };
 getSumm();
+*/
+/*
+function getSumm() {
+	let summ = 1 + 2;
+	console.log(summ);
+};
 
+	let someVar = getSumm;
+
+	someVar();
+	getSumm();
+*/	
+/*
 // Функциональное выражение (Function Expression)
 let showMessage = function () {
 	console.log('Привет!');
