@@ -255,23 +255,7 @@ function showLessMessage() {
 }
 calcSumm(1, 1, showMoreMessage, showLessMessage);
 */
-function calcSumm(numOne, numTwo, more, less) {
-	let numSumm = numOne + numTwo;
 
-	if (numSumm > 3) {
-		more();
-	} else {
-		less();
-	}
-}
-
-function showMoreMessage() {
-	console.log('More than 3');
-}
-function showLessMessage() {
-	console.log('Less than 3');
-}
-calcSumm(1, 1, showMoreMessage, showLessMessage);
 //===========================================================
 
 /*
@@ -370,6 +354,16 @@ function calcSumm(numOne, numTwo) {
 }
 console.log(calcSumm(2, 3));
 */
+function calcSumm(numOne, numTwo) {
+	let result = 1
+	// умножаем result на numOne numTwo раз
+	for(let i = 0; i < numTwo; i++) {
+	
+	result *= numOne;
+	}
+	return result;
+}
+console.log(calcSumm(2, 3));
 
 //========================================================================================================================================================
 /*
@@ -662,10 +656,3 @@ function showMovie(age) {
 	alert("Вам показывается кино");
 }
 */
-function showMovie(age) {
-	if (!checkAge(age)) {
-		return;
-	}
-
-	alert("Вам показывается кино");
-}
