@@ -436,7 +436,6 @@ let имя переменной = (параметр, ...параметр) => в�
 let getMessage = (text, name) => text + ', ' + name + '!';
 console.log(getMessage('Привет', 'Вася'));
 
-
 // Многострочная стрелочная функция
 let getMessage = (text, name) => {
 	let message = text + ', ' + name + '!';
@@ -461,12 +460,39 @@ setInterval(функция или код, задержка, параметр, ..
 /*
 function showMessage(text, name) {
 	console.log(`${text}, ${name}!`);
-	setTimeout(showMessage, 1000, text, name);
 }
 //setInterval(showMessage, 500, 'Привет', 'Вася');
 setTimeout(showMessage, 1000, 'Привет', 'Вася');
 */
+/* Recursion setTimeout 
+function showMessage(text, name) {
+	console.log(`${text}, ${name}!`);
+	setTimeout(showMessage, 1000, 'Привет', 'Вася');
+}
 
+setTimeout(showMessage, 1000, 'Привет', 'Вася');
+*/
+/* clearTimeout 
+function showNumber(num) {
+	console.log(num);
+	let timeId = setTimeout(showNumber, 1000, ++num);
+
+	if (num === 6) {
+		clearTimeout(timeId);
+	}
+}
+setTimeout(showNumber, 1000, 1);
+*/
+/*
+function showNumber(num) {
+	console.log(num);
+	if (num < 5) {
+		setTimeout(showNumber, 1000, ++num);
+	}
+}
+
+setTimeout(showNumber, 1000, 1);
+*/
 //---
 /*
 let result = 0;
