@@ -1,9 +1,5 @@
 //ДОМАШКА
-function showName() {
-	console.log('Vasia!');
-}
-showName();
-console.log('Kolia!');
+
 /*
 1. Изучить теорию
 2. Решить задачи:
@@ -34,13 +30,52 @@ let showMessage = function () {
 'use strict'
 if (2 > 1) {
 	function showMessage() {
-		console.log('Сообщение');
+		console.log('Message');
 	}
 }
 showMessage(); // Error (showMessage is not defined)
 
 */
+// Какая из функций вызвана верно?
 
+// 1
+showMessage();
+function showMessage() {
+	console.log('Сообщение');
+}
+
+// 2
+   function showMessage() {
+
+	   // Локальная переменная
+		let message = "Сообщение";
+		console.log(Сообщение);
+   }
+
+	console.log(message);
+/*
+'use strict'
+
+// Function declaration
+if (2 > 1) {
+	function showMessage() {
+		console.log('Message');
+	}
+}
+
+showMessage();
+
+let getMessage;
+
+// Function expression
+if (2 > 1) {
+	getMessage = function showMessage() {
+		console.log('Message');
+	}
+}
+
+getMessage();
+*/
 //========================================================================================================================================================
 //========================================================================================================================================================
 //Объявление функции (Function Declaration)
