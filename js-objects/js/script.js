@@ -18,13 +18,14 @@ let userInfo = {};  // синтаксис "литерал объекта"
 
 /*
 let userInfo = {
-	name: "Вася", // Свойство объекта
+	name: "Вася", // Свойство объекта, name - ключ, вася - значение
 	age: 30, // Последняя (висячая) запятая
 };
 
 console.log(userInfo);
 console.log(userInfo.name);
 */
+
 //---------------------------------------------
 // Имена свойств
 /*
@@ -37,8 +38,8 @@ let userInfo = {
 console.log(userInfo.name);
 console.log(userInfo['name']);
 console.log(userInfo["likes javascript"]);
-
 */
+
 //-----------------
 // Вычисляемое либо передаваемое имя
 /*
@@ -51,6 +52,7 @@ let userInfo = {
 };
 console.log(userInfo["likes javascript"]);
 */
+
 //-----------------
 /*
 // Передаем имя
@@ -66,6 +68,7 @@ console.log(userInfo[firstPart]);
 //let key = "name";
 //console.log(userInfo[key]);
 */
+
 //-----------------
 /*
 // Зарезервированные слова в именах
@@ -76,18 +79,19 @@ let userInfo = {
 console.log(userInfo.let);
 console.log(userInfo.for);
 */
+
 //-----------------
 /*
 // Имена = строки либо символы
 
 let userInfo = {
-	0: "Вася", // 0 тоже самое что "0"
+	0: "Вася", // 0 тоже самое что "0" 0 превращается в строку
 };
 console.log(userInfo[0]);
 console.log(userInfo["0"]);
 */
-//-----------------
 
+//-----------------
 /*
 // Тип данных Symbol
 
@@ -106,6 +110,7 @@ console.log(userInfo);
 // 2. Использование системных символов
 // 	Symbol.iterator, Symbol.toPrimitive и т.д.
 */
+
 //---------------------------------------------
 // Вложенность
 /*
@@ -121,7 +126,15 @@ console.log(userInfo);
 console.log(userInfo.address);
 console.log(userInfo.address.city);
 */
-
+let userInfo = {
+	name: 'Vasia',
+	age: 30,
+	address: {
+		city: 'South-city',
+		street: 'Freedom',
+	}
+}
+console.log(userInfo.address.city);
 //---------------------------------------------
 /*
 // Свойство из переменной
