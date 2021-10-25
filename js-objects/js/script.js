@@ -126,15 +126,7 @@ console.log(userInfo);
 console.log(userInfo.address);
 console.log(userInfo.address.city);
 */
-let userInfo = {
-	name: 'Vasia',
-	age: 30,
-	address: {
-		city: 'South-city',
-		street: 'Freedom',
-	}
-}
-console.log(userInfo.address.city);
+
 //---------------------------------------------
 /*
 // Свойство из переменной
@@ -149,6 +141,7 @@ function makeUserInfo(name, age) {
 let user = makeUserInfo("Вася", 30);
 console.log(user);
 */
+
 //------------------
 /*
 function makeUserInfo(name, age) {
@@ -162,6 +155,7 @@ function makeUserInfo(name, age) {
 let user = makeUserInfo("Вася", 30);
 console.log(user);
 */
+
 //---------------------------------------------
 // Изменение объекта
 /*
@@ -207,6 +201,7 @@ delete userInfo["likes javascript"];
 console.log(userInfo);
 
 */
+
 //------------------
 // Изменение свойства
 /*
@@ -220,7 +215,15 @@ userInfo.age = 18;
 
 console.log(userInfo);
 */
+let userinfo = {
+	name: 'Vasia',
+	age: 30,
+}
+console.log(userInfo);
 
+userInfo.age = 18;
+
+console.log(userInfo);
 //------------------
 /*
 // Изменение свойства даже в константе
