@@ -215,15 +215,7 @@ userInfo.age = 18;
 
 console.log(userInfo);
 */
-let userinfo = {
-	name: 'Vasia',
-	age: 30,
-}
-console.log(userInfo);
 
-userInfo.age = 18;
-
-console.log(userInfo);
 //------------------
 /*
 // Изменение свойства даже в константе
@@ -293,7 +285,12 @@ let userInfo = {
 Object.assign(userInfo, { ['likes javascript']: true, city: "Uzhhorod" });
 console.log(userInfo);
 */
-
+let userInfo = {
+	name: "Vasia",
+	age: 30,
+}
+Object.assign(userInfo, { ['Likes JavaScript']: true, city: "Uzhhorod" });
+console.log(userInfo);
 //---------------------------------------------
 // Проверка существования свойства
 /*
