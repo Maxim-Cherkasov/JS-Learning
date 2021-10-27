@@ -285,12 +285,7 @@ let userInfo = {
 Object.assign(userInfo, { ['likes javascript']: true, city: "Uzhhorod" });
 console.log(userInfo);
 */
-let userInfo = {
-	name: "Vasia",
-	age: 30,
-}
-Object.assign(userInfo, { ['Likes JavaScript']: true, city: "Uzhhorod" });
-console.log(userInfo);
+
 //---------------------------------------------
 // Проверка существования свойства
 /*
@@ -304,6 +299,7 @@ if (userInfo.age) { // true или false
 	console.log(userInfo.age);
 }
 */
+
 //--------------------
 // Опциональная цепочка
 /*
@@ -334,6 +330,7 @@ if ("name" in userInfo) {
 	console.log(userInfo.name);
 }
 */
+
 //--------------------
 
 //В большинстве случаев сработает сравнение с undefined.
@@ -431,7 +428,6 @@ let userInfo = {
 userInfo.showInfo();
 */
 //----------------------
-
 /*
 let userInfo = {
 	name: "Вася",
@@ -453,6 +449,23 @@ let userInfo = {
 }
 userInfo.showInfo();
 */
+let userInfo = {
+	name: "Вася",
+	age: 30,
+	address: {
+		city: "Uzhhorod",
+		street: "Freedom",
+	},
+	showInfo() {
+		//function show() {
+		//console.log(`${this.name}, ${this.age} лет. Адрес: г.${this.address.city}, ул.${this.address.street}`);
+		//}
+
+		let show = () => console.log(`${this.name}, ${this.age} years. Address: c.${this.address.city}`);
+	show();
+}
+}
+userInfo.showInfo();
 //----------------------
 // Преимущество "this"
 /*
