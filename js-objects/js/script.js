@@ -449,23 +449,7 @@ let userInfo = {
 }
 userInfo.showInfo();
 */
-let userInfo = {
-	name: "Вася",
-	age: 30,
-	address: {
-		city: "Uzhhorod",
-		street: "Freedom",
-	},
-	showInfo() {
-		//function show() {
-		//console.log(`${this.name}, ${this.age} лет. Адрес: г.${this.address.city}, ул.${this.address.street}`);
-		//}
 
-		let show = () => console.log(`${this.name}, ${this.age} years. Address: c.${this.address.city}`);
-	show();
-}
-}
-userInfo.showInfo();
 //----------------------
 // Преимущество "this"
 /*
@@ -487,6 +471,7 @@ let user = userInfo;
 userInfo = null;
 user.showInfo();
 */
+
 //---------------------------------------------
 
 // Функция-конструктор
@@ -518,6 +503,17 @@ function UserInfo(name) {
 console.log(new UserInfo('Вася'));
 console.log(new UserInfo('Лена'));
 */
+function UserInfo(name) {
+
+	// this = (); Создается пустой объект (неявно)
+
+	this.name = name;
+	this.age = 30;
+
+	// return this: Возвращается объект (неявно)
+}
+	console.log(new UserInfo('Vasia'));
+	console.log(new UserInfo("Lena"));
 
 /*
 Когда мы пишем наш код, используя объекты для представления сущностей реального мира,
