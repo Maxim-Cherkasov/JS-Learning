@@ -65,8 +65,8 @@ let userInfo = {
 console.log(userInfo[firstPart]);
 
 // Преимущество квадратных скобок
-//let key = "name";
-//console.log(userInfo[key]);
+let key = "name";
+console.log(userInfo[key]);
 */
 
 //-----------------
@@ -503,6 +503,7 @@ function UserInfo(name) {
 console.log(new UserInfo('Вася'));
 console.log(new UserInfo('Лена'));
 */
+/*
 function UserInfo(name) {
 
 	// this = (); Создается пустой объект (неявно)
