@@ -274,9 +274,11 @@ user.age = 18;
 console.log(userInfo);
 console.log(user);
 */
+
 //-------------------
 /*
 // Еще про Object.assign
+// С помощью Object.assign мы моем добавлять новые свойства в объект
 
 let userInfo = {
 	name: "Вася",
