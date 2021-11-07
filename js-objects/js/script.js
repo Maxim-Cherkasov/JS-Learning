@@ -614,14 +614,7 @@ console.log(userInfo."likes js");
 5.Удалите свойство name из объекта.
 */
 
-let userInfo = {
-	name: "Вася",
-	age: 30,
-	address: {
-		country: "Best",
-		city: "Uzhhorod"
-	}
+for (let i = 0; i < 5; i++) {
+	console.log("value,",i)
 }
-for (const key in userInfo.address) {
-	console.log(key);
-}
+
