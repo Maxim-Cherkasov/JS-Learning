@@ -26,7 +26,7 @@ console.log(someBigNum);
 let someLittleNum = 0.000001;
 console.log(someLittleNum);
 
-let someLittleNum = 1e-6; // 1 / 1000000;
+let someLittleNum = 5e-6; // 1 / 1000000;
 console.log(someLittleNum);
 */
 //=========================================================================
@@ -37,6 +37,7 @@ console.log(someLittleNum);
 Шестнадцатеричные числа широко используются в JavaScript
 для представления цветов, кодировки символов и многого другого.
 */
+
 /*
 console.log(0xFF); // = 0xff = 255
 
@@ -104,7 +105,10 @@ console.log(numOne); // 6
 */
 
 // Как нам получить 5.8 или 5.85 ?
-
+let numOne = Math.round(5.845 * 10) / 10; // 58.45 - 58 - 5.8
+let numTwo = Math.round(5.845 * 100) / 100; // 584.5 - 585 - 5.85
+console.log(numTwo);
+let numThree = Math.round(5.8449 * 100) / 100; // 584.49 - 584 - 5.84
 /*
 // Способ умножения и деления
 
