@@ -105,10 +105,7 @@ console.log(numOne); // 6
 */
 
 // Как нам получить 5.8 или 5.85 ?
-let numOne = Math.round(5.845 * 10) / 10; // 58.45 - 58 - 5.8
-let numTwo = Math.round(5.845 * 100) / 100; // 584.5 - 585 - 5.85
-console.log(numTwo);
-let numThree = Math.round(5.8449 * 100) / 100; // 584.49 - 584 - 5.84
+
 /*
 // Способ умножения и деления
 
@@ -196,7 +193,6 @@ if (25 + "Привет!" !== NaN) {
 console.log(NaN === NaN);
 */
 
-
 // Проверка isFinite
 /*
 преобразует аргумент в число и возвращает true,
@@ -207,6 +203,7 @@ console.log(isFinite("25")); // "25" -> 25 -> true
 console.log(isFinite("Привет!")); // NaN -> false
 console.log(isFinite(10 / 0)); // Infinity -> false
 */
+
 //=========================================================================
 //parseInt и parseFloat
 /*
@@ -218,6 +215,7 @@ let valueOne = +"150";
 console.log(valueOne);
 console.log(typeof valueOne);
 */
+
 /*
 Но, мы очень часто сталкиваемся со значениями
 у которых есть единица измерения, например
@@ -238,6 +236,7 @@ console.log(typeof valueTwo);
 Функция parseInt возвращает целое число, а parseFloat
 возвращает число с плавающей точкой:
 */
+
 /*
 let valueOne = parseInt("150.58px");
 console.log(valueOne);
@@ -265,14 +264,12 @@ console.log(parseInt('0xff', 16));
 console.log(parseInt('ff', 16));
 */
 
-
 //=========================================================================
 // Другие возможности
 
-// Уже знакомый нам объект Math, одержит 
+// Уже знакомый нам объект Math, cодержит 
 // различные математические функции и константы. 
 // Вот некоторые из них:
-
 
 
 //Math.random()
@@ -301,15 +298,22 @@ console.log(Math.abs(num));
 */
 
 
-
 /*
 //Math.pow(n, power)
 //Возвращает число n, возведённое в степень power
 
 console.log(Math.pow(5, 8));
 */
-
 // Больше функций Math смотри по ссылке в описании
+
+let sourceNum = 1.005 + Number.EPSILON;
+let numFour = Math.round(sourceNum * 100) / 100;
+console.log(numFour);
+
+console.log(sourceNum * 100);
+
+
+console.log(Math.round(sourceNum * 100));
 
 
 
