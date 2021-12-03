@@ -66,12 +66,7 @@ console.log(arrOne);
 // очистить массив – это arrOne.length = 0;
 
 */
-let arrOne = ['Vania', 'Ivan', 'Olia',];
-console.log(arrOne);
-console.log(arrOne.length);
 
-arrOne.length = 1;
-console.log(arrOne);
 //========================================================================================================================================================
 
 
@@ -218,6 +213,7 @@ console.log(arr.length);
 
 // Метод splice. Позволяет добавлять, удалять и заменять элементы.
 // Синтаксис arr.splice(index[, deleteCount, elem1, ..., elemN])
+
 /*
 // Удаляем элемент
 let arrOne = ['Ваня', 'Иштван', 'Оля',];
