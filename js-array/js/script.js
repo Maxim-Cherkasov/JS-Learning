@@ -214,6 +214,7 @@ console.log(arr.length);
 // Метод splice. Позволяет добавлять, удалять и заменять элементы.
 // Синтаксис arr.splice(index[, deleteCount, elem1, ..., elemN])
 
+
 /*
 // Удаляем элемент
 let arrOne = ['Ваня', 'Иштван', 'Оля',];
@@ -283,6 +284,7 @@ let arrOne = ['Ваня', 'Иштван', 'Оля',];
 let arrTwo = arrOne.concat('Петя');
 console.log(arrTwo);
 */
+
 //========================================================================================================================================================
 
 // Поиск в массиве
@@ -324,6 +326,15 @@ let result = arr.find(function(item, index, array) {
   // если все итерации оказались ложными, возвращается undefined
 });
 */
+let arr = [
+	{ name: "Вася", age: 36 },
+	{ name: "Коля", age: 18 },
+	{ name: 'Оля', age: 'Не скажу' },
+]
+let resultOne = arr.find(function (item, index, array) {
+	return item.age === 36;
+});
+console.log(resultOne);
 /*
 let arr = [
 	{ name: 'Вася', age: 36 },
