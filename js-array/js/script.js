@@ -326,15 +326,7 @@ let result = arr.find(function(item, index, array) {
   // если все итерации оказались ложными, возвращается undefined
 });
 */
-let arr = [
-	{ name: "Вася", age: 36 },
-	{ name: "Коля", age: 18 },
-	{ name: 'Оля', age: 'Не скажу' },
-]
-let resultOne = arr.find(function (item, index, array) {
-	return item.age === 36;
-});
-console.log(resultOne);
+
 /*
 let arr = [
 	{ name: 'Вася', age: 36 },
@@ -419,6 +411,17 @@ function compareNumeric(a, b) {
 
 console.log(arrTwo.sort(compareNumeric));
 */
+let arrTwo = [8, 22, 1,];
+console.log(arrTwo.sort());
+
+function compareNumeric(a, b) {
+	console.log(`Comparing ${a} and ${b}`);
+	if (a > b) return 1;
+	if (a == b) return 0;
+	if (a < b) return -1;
+	
+}
+console.log(arrTwo.sort(compareNumeric));
 
 //--------
 
