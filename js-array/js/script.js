@@ -411,17 +411,7 @@ function compareNumeric(a, b) {
 
 console.log(arrTwo.sort(compareNumeric));
 */
-let arrTwo = [8, 22, 1,];
-console.log(arrTwo.sort());
 
-function compareNumeric(a, b) {
-	console.log(`Comparing ${a} and ${b}`);
-	if (a > b) return 1;
-	if (a == b) return 0;
-	if (a < b) return -1;
-	
-}
-console.log(arrTwo.sort(compareNumeric));
 
 //--------
 
@@ -432,7 +422,6 @@ console.log(arrTwo.sort(compareNumeric));
 let arrOne = ['Ваня', 'Иштван', 'Оля'];
 console.log(arrOne.reverse());
 */
-
 
 //========================================================================================================================================================
 
@@ -495,6 +484,7 @@ let arrTwo = ['Ваня', 'Иштван', 'Оля'];
 console.log(String(arrTwo));
 */
 
+
 //========================================================================================================================================================
 
 // Проверка Array.isArray()
@@ -510,6 +500,7 @@ let arr = [];
 console.log(typeof obj);
 console.log(typeof arr);
 */
+
 // Как же нам узнать где массив а где нет?
 /*
 if (Array.isArray(obj)) {
@@ -545,7 +536,6 @@ for (let arrItem of arr) {
 */
 //---------------------
 
-
 // Метод перебора forEach
 // Выполняет функцию для каждого элемента массива
 /*
@@ -561,6 +551,7 @@ arr.forEach(function (item, index, array) {
 	console.log(`${item} находится на ${index} позиции в ${array}`);
 });
 */
+
 /*
 // Стрелочная функция
 arr.forEach((item, index, array) => {
@@ -621,6 +612,7 @@ let reduceValueOne = arrOne.reduce(function (previousValue, item, index, array) 
 }, 0);
 console.log(reduceValueOne);
 */
+
 /*
 Шаг №1
 previousValue = 0
@@ -648,8 +640,13 @@ item = 4
 let arrArrow = [1, 2, 3, 4];
 let reduceValueArrow = arrArrow.reduce((pValue, item) => item + pValue, 0);
 console.log(reduceValueArrow);
-*/
 
+let arrOne = [1, 2, 3, 4];
+let reduceValueOne = arrOne.reduce(function (previousValue, item, index, array) {
+	return item + previousValue;
+}, 0);
+console.log(reduceValueOne);
+*/
 
 //--------
 
@@ -668,7 +665,13 @@ let reduceValueTwo = arrTwo.reduce(function (previousValue, item, index, array) 
 });
 console.log(`Пользователи: ${reduceValueTwo}`);
 */
-
+let arrTwo = ['Ваня', 'Иштван', 'Оля',];
+let reduseValueTwo = arrTwo.reduce(function (previousValue, item, index, array) {
+	console.log(previousValue);
+	console.log(item);
+	return `${item}, ${previousValue}`;
+});
+console.log(`Users: ${reduceValueTwo}`);
 
 // Метод arr.reduceRight работает аналогично, 
 // но проходит по массиву справа налево.
