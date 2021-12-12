@@ -665,13 +665,6 @@ let reduceValueTwo = arrTwo.reduce(function (previousValue, item, index, array) 
 });
 console.log(`Пользователи: ${reduceValueTwo}`);
 */
-let arrTwo = ['Ваня', 'Иштван', 'Оля',];
-let reduseValueTwo = arrTwo.reduce(function (previousValue, item, index, array) {
-	console.log(previousValue);
-	console.log(item);
-	return `${item}, ${previousValue}`;
-});
-console.log(`Users: ${reduceValueTwo}`);
 
 // Метод arr.reduceRight работает аналогично, 
 // но проходит по массиву справа налево.
@@ -693,6 +686,7 @@ console.log(typeof arr);
 arr.name = "Коля";
 console.log(arr);
 */
+
 /*
 Но то, что действительно делает массивы особенными – это их внутреннее
 представление. Движок JavaScript старается хранить элементы
@@ -739,9 +733,24 @@ console.log(arr.length);
 Вставьте "Маша" и "Паша" в начало массива.
 */
 /*
+let users = ['Vania', 'Ishtwan'];
+users.push('Olia');
+users[1] = 'Petia';
+console.log(users);
+let removed = users.splice(0, 1);
+console.log(removed);
+users.splice(0, 0, 'Masha', 'Pasha');
+console.log(users);
+*/
+
+/*
 // Задача №3.
 // Удалить элемент 'Иштван' и возвратить его в переменную
 let arr = ['Ваня', 'Иштван', 'Оля',];
+
+let arr = ['Ваня', 'Иштван', 'Оля',];
+let removed = arr.splice(1, 1);
+console.log(removed);
 
 // Задача №4.
 //Сделать из строки массив
@@ -754,6 +763,10 @@ let reduceValue = arrTwo.reduce(function (previousValue, item, index, array) {
 	console.log(previousValue);
 });
 */
+let str = 'Ваня,Иштван,Оля';
+
+let arr = str.split(',');
+console.log(arr);
 
 //========================================================================================================================================================
 //========================================================================================================================================================
