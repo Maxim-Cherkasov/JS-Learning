@@ -91,6 +91,7 @@ list.insertAdjacentHTML(
 const windowWidth = window.innerWidth;
 console.log(`Ширина окна браузера: ${windowWidth}px`);
 */
+
 //========================================================================================================================================================
 //BOM
 
@@ -141,7 +142,6 @@ history.back();
 history.forward();
 */
 
-
 //=================
 
 //Alert
@@ -150,6 +150,7 @@ history.forward();
 //Сonfirm
 //const confirmResult = confirm("Хочешь научиться верстать?");
 //console.log(confirmResult);
+
 
 //Prompt
 //const promptResult = prompt("Кто ты по жизни?");
