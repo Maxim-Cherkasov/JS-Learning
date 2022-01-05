@@ -165,6 +165,7 @@ history.forward();
 Самые верхние элементы дерева
 доступны как свойства объекта document
 */
+
 /*
 const htmlElement = document.documentElement;
 const headElement = document.head;
@@ -198,7 +199,6 @@ console.log(bodyElement);
 //Коллекция childNodes содержит список всех детей, 
 //включая текстовые узлы.
 //const childNodes = bodyElement.childNodes;
-//console.log(childNodes);
 
 //Для проверки наличия дочерних узлов 
 //существует также специальная функция hasChildNodes()
@@ -239,6 +239,7 @@ DOM-коллекции, и даже более – все навигационн
 Для изменения DOM требуются другие методы.
 */
 //------------------------------------------
+const bodyElement = document.body;
 
 /*
 // Соседние и родительский узлы
