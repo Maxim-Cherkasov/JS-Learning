@@ -255,7 +255,7 @@ console.log(typeof funcVariable);
 //Преобразование типов
 
 //Строковое преобразование
-/*
+
 let userAge = 58;
 console.log(userAge);
 console.log(typeof userAge);
@@ -264,7 +264,7 @@ userAge = String(userAge);
 
 console.log(userAge);
 console.log(typeof userAge);
-*/
+
 
 /*
 let userTrue = true;
@@ -305,6 +305,7 @@ console.log(typeof userAge);
 
 
 //Логическое преобразование
+/*
 let userAge = 0;
 console.log(userAge);
 console.log(typeof userAge);
@@ -313,3 +314,4 @@ userAge = Boolean(userAge);
 
 console.log(userAge);
 console.log(typeof userAge);
+*/

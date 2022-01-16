@@ -37,7 +37,7 @@ showMessage(); // Error (showMessage is not defined)
 
 */
 // Какая из функций вызвана верно?
-
+/*
 // 1
 showMessage();
 function showMessage() {
@@ -53,6 +53,7 @@ function showMessage() {
    }
 
 	console.log(message);
+	*/
 /*
 'use strict'
 
@@ -106,11 +107,11 @@ calcSum - посчитать сумму
 */
 
 // Функция вывода сообщения
-/*
+
 function showMessage() {
 	console.log('Сообщение');
 }
-*/
+showMessage();
 
 /*
 Функция должна делать только то,

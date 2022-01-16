@@ -239,7 +239,6 @@ DOM-коллекции, и даже более – все навигационн
 Для изменения DOM требуются другие методы.
 */
 //------------------------------------------
-const bodyElement = document.body;
 
 /*
 // Соседние и родительский узлы
@@ -260,6 +259,7 @@ console.log(parentNode);
 В частности, в childNodes находятся и текстовые узлы и
 узлы-элементы и узлы-комментарии, если они есть.
 */
+
 
 // Получаем коллекцию всех дочерних узлов
 //const childNodes = bodyElement.childNodes;
@@ -292,6 +292,8 @@ console.log(previousSibling);
 console.log(nextSibling);
 console.log(parentElement);
 */
+const bodyElement = document.body;
+
 
 //========================================================================================================================================================
 
@@ -386,6 +388,8 @@ const listItems =
 	subList[0].querySelectorAll('.lesson__list .lesson__item-sub-list');
 console.log(listItems);
 */
+
+
 /*
 В данном примере,
 когда мы выбрали ".lesson__list .lesson__item-sub-list"
@@ -424,6 +428,7 @@ console.log(lessonList);
 const elem = document.getElementById('listItem');
 console.log(elem);
 */
+
 /*
 1. id - уникален
 2. Поиск полько внутри document.
@@ -450,6 +455,7 @@ elem.getElementsByClassName(className)
 const elems = document.getElementsByClassName('lesson__item-list');
 console.log(elems);
 */
+
 //-------
 
 //document.getElementById(ID) и elem.getElementsBy*
@@ -467,10 +473,12 @@ document.getElementsByName(name) возвращает элементы с
 заданным атрибутом name.Очень редко используется.
 Поиск полько внутри document.
 */
+
 /*
 const elems = document.getElementsByName('list');
 console.log(elems);
 */
+
 
 //---------------------
 
@@ -493,6 +501,8 @@ lessonList.insertAdjacentHTML(
 	'<li class="lesson__item-list">Новый пункт</li>'
 );
 */
+
+
 //---------------------
 
 //closest
@@ -518,6 +528,7 @@ const elem = document.querySelector('.lesson__item-sub-list');
 const parentList = elem.closest('.lesson__list');
 console.log(parentList);
 */
+
 /*
 Очень полезный метод, часто используется для проверки
 на существование того или иного родителя, либо для изменения
@@ -558,9 +569,9 @@ console.log(list);
 
 // Изменение документа
 
-/*
-// Cодержимое элемента innerHTML
 
+// Cодержимое элемента innerHTML
+/*
 // Получаем объект
 const textElement = document.querySelector('.lesson__text');
 
@@ -598,6 +609,14 @@ textElement.outerHTML = `<p>Живи, а работай в
 
 console.log(textElement.outerHTML);
 */
+const textElement = document.querySelector('.lesson__text');
+const textElementContent = textElement.outerHTML;
+console.log(textElementContent);
+
+textElement.outerHTML = `<p>Живи, а работай в
+<span class="yellow">свободное</span> время!</p>`;
+
+console.log(textElement.outerHTML);
 
 //====================
 
