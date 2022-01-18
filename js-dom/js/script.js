@@ -609,14 +609,7 @@ textElement.outerHTML = `<p>Живи, а работай в
 
 console.log(textElement.outerHTML);
 */
-const textElement = document.querySelector('.lesson__text');
-const textElementContent = textElement.outerHTML;
-console.log(textElementContent);
 
-textElement.outerHTML = `<p>Живи, а работай в
-<span class="yellow">свободное</span> время!</p>`;
-
-console.log(textElement.outerHTML);
 
 //====================
 
@@ -684,6 +677,7 @@ console.log(newText);
 но не являются частью документа
 */
 
+
 //===================
 
 // Методы вставки
@@ -698,8 +692,10 @@ const newElement = document.createElement('div');
 newElement.innerHTML = `Живи, а работай в
 	<span class="yellow">свободное</span> время!`;
 
-*/
+console.log(newElement);
 
+textElement.append(newElement);
+*/
 // Вставляем новый элемент...
 
 //...перед объектом
@@ -742,6 +738,7 @@ textElement.insertAdjacentHTML(
 	<span class="yellow">свободное</span> время!</p>`
 );
 */
+
 /*
 "beforebegin" – вставить html непосредственно перед textElement,
 "afterbegin" – вставить html в начало textElement,
@@ -808,7 +805,7 @@ lessonBlock.append(title);
 /*
 Если нужен не перенос а именно копия элемента
 */
-/*
+
 // Получаем объект
 const textElement = document.querySelector('.lesson__text');
 // Клонирование без дочерних элементов
@@ -819,7 +816,7 @@ const cloneTextElement = textElement.cloneNode(true);
 
 const lessonBlock = document.querySelector('.lesson');
 lessonBlock.append(cloneTextElement);
-*/
+
 
 //=========================================
 
