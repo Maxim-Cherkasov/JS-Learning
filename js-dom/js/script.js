@@ -805,7 +805,7 @@ lessonBlock.append(title);
 /*
 Если нужен не перенос а именно копия элемента
 */
-
+/*
 // Получаем объект
 const textElement = document.querySelector('.lesson__text');
 // Клонирование без дочерних элементов
@@ -816,7 +816,7 @@ const cloneTextElement = textElement.cloneNode(true);
 
 const lessonBlock = document.querySelector('.lesson');
 lessonBlock.append(cloneTextElement);
-
+*/
 
 //=========================================
 
@@ -855,6 +855,7 @@ console.log(elementClassNames);
 element.className = "red";
 */
 
+
 //-----------------------------
 
 // Свойство classList
@@ -864,7 +865,7 @@ element.className = "red";
 */
 
 // Получаем элемент
-//const element = document.querySelector('.lesson__item-list_red');
+const element = document.querySelector('.lesson__item-list_red');
 
 /*
 // Добавить класс
@@ -952,6 +953,11 @@ console.log(elementStyle.fontSize);
 const elementBeforeStyle = getComputedStyle(element, "::before");
 console.log(elementBeforeStyle.backgroundColor);
 */
+
+//before
+const elementBeforeStyle = getComputedStyle(element,"::before");
+console.log(elementBeforeStyle.backgroundColor);
+
 
 /*
 // Чтобы получить конкретное значение
