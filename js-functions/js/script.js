@@ -107,12 +107,12 @@ calcSum - посчитать сумму
 */
 
 // Функция вывода сообщения
-
+/*
 function showMessage() {
-	console.log('Сообщение');
+	console.log('message');
 }
 showMessage();
-
+*/
 /*
 Функция должна делать только то,
 что явно подразумевается её названием.
@@ -712,3 +712,40 @@ function showMovie(age) {
 	alert("Вам показывается кино");
 }
 */
+
+
+/*
+function showMessage() {
+	let message = "Hello I'm JavaScript";
+	alert(message);
+}
+
+showMessage();
+*/
+/*
+let userName = "John";
+
+function showMessage() {
+	let message = 'Hello, '+userName;
+	alert(message);
+}
+
+showMessage();
+*/
+/*
+let userName = 'John';
+
+function showMessage() {
+  userName = "Bob"; // (1) changed the outer variable
+
+let message = 'Hello, ' + userName;
+alert(message);
+}
+
+alert( userName ); // John before the function call
+
+
+
+alert( userName ); // Bob, the value was modified by the function
+*/
+

@@ -691,3 +691,4 @@ console.log(!false && 11 || 18 && !'');
 let name = 0;
 console.log(name ?? "Без имени")
 */
+console.log(8**(1/4));

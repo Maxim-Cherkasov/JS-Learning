@@ -18,14 +18,13 @@ let userInfo = {};  // синтаксис "литерал объекта"
 
 /*
 let userInfo = {
-	name: "Вася", // Свойство объекта, name - ключ, вася - значение
+	name: "Вася", // Свойство объекта
 	age: 30, // Последняя (висячая) запятая
 };
 
 console.log(userInfo);
 console.log(userInfo.name);
 */
-
 //---------------------------------------------
 // Имена свойств
 /*
@@ -38,8 +37,8 @@ let userInfo = {
 console.log(userInfo.name);
 console.log(userInfo['name']);
 console.log(userInfo["likes javascript"]);
-*/
 
+*/
 //-----------------
 // Вычисляемое либо передаваемое имя
 /*
@@ -52,7 +51,6 @@ let userInfo = {
 };
 console.log(userInfo["likes javascript"]);
 */
-
 //-----------------
 /*
 // Передаем имя
@@ -65,10 +63,9 @@ let userInfo = {
 console.log(userInfo[firstPart]);
 
 // Преимущество квадратных скобок
-let key = "name";
-console.log(userInfo[key]);
+//let key = "name";
+//console.log(userInfo[key]);
 */
-
 //-----------------
 /*
 // Зарезервированные слова в именах
@@ -79,19 +76,18 @@ let userInfo = {
 console.log(userInfo.let);
 console.log(userInfo.for);
 */
-
 //-----------------
 /*
 // Имена = строки либо символы
 
 let userInfo = {
-	0: "Вася", // 0 тоже самое что "0" 0 превращается в строку
+	0: "Вася", // 0 тоже самое что "0"
 };
 console.log(userInfo[0]);
 console.log(userInfo["0"]);
 */
-
 //-----------------
+
 /*
 // Тип данных Symbol
 
@@ -110,7 +106,6 @@ console.log(userInfo);
 // 2. Использование системных символов
 // 	Symbol.iterator, Symbol.toPrimitive и т.д.
 */
-
 //---------------------------------------------
 // Вложенность
 /*
@@ -141,7 +136,6 @@ function makeUserInfo(name, age) {
 let user = makeUserInfo("Вася", 30);
 console.log(user);
 */
-
 //------------------
 /*
 function makeUserInfo(name, age) {
@@ -155,10 +149,9 @@ function makeUserInfo(name, age) {
 let user = makeUserInfo("Вася", 30);
 console.log(user);
 */
-
 //---------------------------------------------
 // Изменение объекта
-/*
+
 // Добавление свойства
 let userInfo = {
 	name: "Вася",
@@ -180,7 +173,7 @@ userInfo.address = {
 };
 
 console.log(userInfo);
-*/
+
 //------------------
 /*
 // Удаление свойства
@@ -201,7 +194,6 @@ delete userInfo["likes javascript"];
 console.log(userInfo);
 
 */
-
 //------------------
 // Изменение свойства
 /*
@@ -274,11 +266,9 @@ user.age = 18;
 console.log(userInfo);
 console.log(user);
 */
-
 //-------------------
 /*
 // Еще про Object.assign
-// С помощью Object.assign мы моем добавлять новые свойства в объект
 
 let userInfo = {
 	name: "Вася",
@@ -301,7 +291,6 @@ if (userInfo.age) { // true или false
 	console.log(userInfo.age);
 }
 */
-
 //--------------------
 // Опциональная цепочка
 /*
@@ -332,7 +321,6 @@ if ("name" in userInfo) {
 	console.log(userInfo.name);
 }
 */
-
 //--------------------
 
 //В большинстве случаев сработает сравнение с undefined.
@@ -430,6 +418,7 @@ let userInfo = {
 userInfo.showInfo();
 */
 //----------------------
+
 /*
 let userInfo = {
 	name: "Вася",
@@ -503,18 +492,6 @@ function UserInfo(name) {
 console.log(new UserInfo('Вася'));
 console.log(new UserInfo('Лена'));
 */
-/*
-function UserInfo(name) {
-
-	// this = (); Создается пустой объект (неявно)
-
-	this.name = name;
-	this.age = 30;
-
-	// return this: Возвращается объект (неявно)
-}
-	console.log(new UserInfo('Vasia'));
-	console.log(new UserInfo("Lena"));
 
 /*
 Когда мы пишем наш код, используя объекты для представления сущностей реального мира,
@@ -531,7 +508,6 @@ function UserInfo(name) {
 
 //========================================================================================================================================================
 //========================================================================================================================================================
-
 
 //ДОМАШКА
 /*
@@ -613,4 +589,3 @@ console.log(userInfo."likes js");
 4.Измените значение свойства name на Лена.
 5.Удалите свойство name из объекта.
 */
-
